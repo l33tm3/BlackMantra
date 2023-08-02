@@ -1,4 +1,5 @@
 # BlackMantra
+![Logo](b61aa079-db46-4743-8c4b-afcf4ecda3c1.jpg)
 Deploy ransomware making by IA 
 Encriptador con Menú
 Este es un programa en Python que ofrece funcionalidades para encriptar archivos con extensiones específicas y enviar la clave de encriptación a través del correo electrónico. Además, proporciona una interfaz gráfica simple con dos botones para realizar las acciones deseadas.
