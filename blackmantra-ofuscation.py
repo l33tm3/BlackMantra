@@ -76,7 +76,7 @@ if __name__ == "__main__":
 
     # Cargar imagen de fondo
     try:
-        bg_image = i.open("ruta_de_la_imagen_de_fondo.png")  # Reemplaza con la ruta de tu imagen de fondo
+        bg_image = i.open("b61aa079-db46-4743-8c4b-afcf4ecda3c1.jpg")  # Reemplaza con la ruta de tu imagen de fondo
         bg_image = bg_image.resize((800, 600))  # Ajustar al tamaño de la ventana
         bg_image = j.PhotoImage(bg_image)
         bg_label = a.Label(p, image=bg_image)
